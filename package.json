@@ -1,0 +1,35 @@
+{
+  "name": "data_service",
+  "version": "0.1.0",
+  "description": "data service for report creator",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "ts-node src/index.ts",
+    "build-start": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoulRiaper/data_service.git"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "KozlovR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoulRiaper/data_service/issues"
+  },
+  "homepage": "https://github.com/SoulRiaper/data_service#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
